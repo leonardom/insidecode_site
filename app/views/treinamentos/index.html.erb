@@ -1,0 +1,67 @@
+<div id="main">
+	<div id="treinamentosJava" class="box">
+	  
+		<h1>TREINAMENTOS JAVA</h1>
+
+		<div id="treinamentosJavaWrap">
+
+			<% for treinamento in @treinamentos_java %>
+			<div class="treinamentosJavaContent" id="treinamento<%=treinamento.id%>" style="display:block;">
+				<br>
+				<h3><%= treinamento.nome %></h3>
+				<img src="<%= treinamento.imagem %>" alt='<%= treinamento.nome %>'/>
+				<p align="justify"><%= treinamento.descricao %></p>
+				<div class="moreInfo"><a href="<%= treinamento_path(treinamento.codigo) %>" class="btnLink">
+					<span>Mais informa&ccedil;&otilde;es</span></a>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+	
+	<div id="treinamentosRails" class="box">
+		<h1>TREINAMENTOS RUBY ON RAILS</h1>
+
+		<div id="treinamentosRailsWrap">
+			<% for treinamento in @treinamentos_rails %>
+			<div class="treinamentosRailsContent" id="treinamento<%=treinamento.id%>" style="display:block;">
+				<br>
+				<h3><%= treinamento.nome %></h3>
+				<img src="<%= treinamento.imagem %>" alt='<%= treinamento.nome %>'/>
+				<p align="justify"><%= treinamento.descricao %></p>
+				<div class="moreInfo"><a href="<%= treinamento_path(treinamento.codigo) %>" class="btnLink">
+					<span>Mais informa&ccedil;&otilde;es</span></a>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+	
+	<div id="diferencias" class="box">
+  
+		<!--<h1>ALGUNS DIFERENCIAS</h1>-->
+
+		<div id="diferenciasWrap">
+			<div class="diferenciasContent" id="diferencias" style="display:block;">
+				<h3>ALGUNS DIFERENCIAS</h3>
+				<ul>
+					<li>Instrutores qualificados, com grande experi&ecirc;ncia no mercado e anos de expertise em suas respectivas tecnologias;</li>
+				</ul>
+				<ul>
+					<li>Material did&aacute;tico atualizado e de alto n&iacute;vel;</li>
+				</ul>
+				<ul>
+					<li>Laborat&oacute;rio com desktops Dell r&aacute;pidos e atuais (core 2 duo, 4 Gb RAM, 320 Gb HD, etc);</li>
+				</ul>
+				<ul>
+					<li>Um computador por aluno;</li>
+				</ul>
+				<ul>
+					<li>Treinamentos realizados utilizando pr&aacute;tica e os mais utilizados software Open Source do mercado.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="clear">&nbsp;</div>

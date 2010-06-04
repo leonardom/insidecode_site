@@ -1,0 +1,37 @@
+<div id="main">
+	<div id="treinamentosLeft" class="box">
+	  
+		<div id="treinamentosLeftWrap">
+
+			<div class="treinamentosLeftContent" id="treinamento<%= @treinamento.id %>" style="display:block;">
+				<br>
+				<h1><%= @treinamento.nome %></h1>
+				<img src="<%= @treinamento.imagem %>" alt='<%= @treinamento.nome %>'/>
+				<p align="justify"><%= @treinamento.descricao %></p>
+				<p><strong>Dura&ccedil;&atilde;o:</strong> <%= @treinamento.duracao %></p>
+				<p><strong>Pr&eacute;-requisitos:</strong> <%= @treinamento.pre_requisitos %></p>
+				<p><strong>C&oacute;digo:</strong> <%= @treinamento.codigo %></p>
+			</div>			
+		</div>
+	</div>
+	
+	<div id="treinamentosRight" class="box">
+	  
+		<div id="treinamentosRightWrap">
+
+			<div class="treinamentosRightContent" id="treinamento<%= @treinamento.id %>" style="display:block;">
+				<br>
+				<h3>Pr&oacute;ximas turmas</h3>
+				<table border=1>
+				  <tr>
+					<td>Data</td>
+					<td>Per&iacute;odo</td>
+					<td>Hor&aacute;rio</td>
+				  </tr>
+				</table>
+			</div>			
+		</div>
+	</div>
+	
+</div>
+<div class="clear">&nbsp;</div>

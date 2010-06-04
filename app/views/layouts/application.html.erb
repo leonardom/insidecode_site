@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>INSIDE CODE Tecnologia</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag "common", "general" %>
+</head>
+<body>
+    <!-- inicio general -->
+	<div id="general">
+		<!-- inicio header -->
+		<div id="header">
+
+			<div id="logo"><a href="/"><img src="/images/logo.png" alt="INSIDE CODE Tecnologia"></a></div>
+
+			<div id="menu">
+				<div class="left">
+					<%= create_tab :name => 'home', :link => "/", :title => 'Home'%>
+					<%= create_tab :name => 'treinamentos', :link => treinamentos_path, :title => 'Treinamentos'%>
+					<%= create_tab :name => 'contato', :link => contato_path, :title => 'Contato'%>
+					<!--<div class="servicos"><a href="">Servi&ccedil;os</a></div>-->
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<!-- inicio content -->
+		<div id="content">
+			<%= yield %>
+		</div>
+		<!-- fim content -->
+		
+	</div>
+    <!-- fim general -->
+
+    <div id="footer">
+		<div id="footerBox">
+			<div id="footerText">
+				<a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<!--<a href="/">Servi&ccedil;os</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
+				<a href="<%= treinamentos_path %>">Treinamentos</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<a href="<%= contato_path %>">Contato</a>
+			</div>
+			<div>
+				<div class="footerAddress right">Rua Marechal Deodoro, 235 - 1&deg Andar - Sala 12<br/>S&atilde;o Jo&atilde;o da Boa Vista - SP - Brasil<br/>+55 19 3633-8184</div>
+				<div class="footerWeb right"><a href="mailto:contato@insidecode.com.br">contato@insidecode.com.br</a></div>
+				<div class="footerWeb right">Twitter <a href="http://twitter.com/insidecode" target="_blank">@insidecode</a></div>
+				<!--
+				<div class="footerFlags right">
+					<a href="/"><img src="/images/br.gif" alt="Português" title="Português" /></a>
+
+					<a href="/en"><img src="/images/us.gif" alt="English" title="English" /></a>
+				</div>
+				-->
+				<div class="clear"></div>
+			</div>
+			<p class="footerMiniText">INSIDE CODE 2010 Todos os direitos reservados.</p>
+		</div>
+	</div>
+</body>
+</html>

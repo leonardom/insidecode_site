@@ -1,0 +1,118 @@
+/* geral */
+* { margin:0; padding:0; }
+
+body {
+  background:#030f09 url(../images/bg2.gif) repeat-x top;
+  color:#FFF;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+}
+
+p {
+  padding:0px;
+  margin:0px;
+}
+
+a {
+  color:#fbfe3d;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#fbfe3d;
+  text-decoration:underline;
+}
+
+a img {
+  border:none;
+}
+
+img {
+  border:none;
+}
+
+h1 { font-family:Geneva, Arial, Helvetica, sans-serif; font-size:22px; text-align:left; color:#999; }
+h2 { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#8c8787; text-align:left; font-weight:bold; }
+h3 { font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#8c8787; text-align:left; }
+h4 { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#990100; text-align:left; font-weight:bold; }
+h5 { font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#990100; text-align:left; }
+h6 { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#8c8787; text-align:left; font-weight:lighter; }
+
+/* class padrao */
+.left { float:left; }
+.right { float:right; }
+.clear { clear: both; }
+
+.bold { font-weight:bold; }
+
+.line10 { line-height:10px; }
+.line20 { line-height:20px; }
+.line10 { line-height:10px; }
+.line10 { line-height:10px; }
+
+.color01 { color:#FFFFFF; }
+.color02 { color:#87827e; }
+.color03 { color:#3a3935; }
+.color04 { color:#7b746b; }
+.color05 { color:#760606; }
+.color06 { color:#ce4949; }
+.color07 { }
+
+.size10 { font-size:10px; }
+.size12 { font-size:12px; }
+.size14 { font-size:14px; }
+.size16 { font-size:16px; }
+.size18 { font-size:18px; }
+
+.padding10 { padding:10px; }
+.padding20 { padding:20px; }
+.padding30 { padding:30px; }
+.paddingtop5 { padding-top:5px; }
+.paddingtop10 { padding-top:10px; }
+.paddingtop20 { padding-top:20px; }
+.paddingbottom20 { padding-bottom:20px; }
+.paddingleft80 { padding-left:80px; }
+.paddingright80 { padding-right:80px; }
+
+/* id */
+#general { min-height:568px; margin:0 auto; padding:0px 0px 30px 0px; width:964px; }
+#header { width:934px; text-align:left; padding-left:30px;}
+#logo { margin:0px; padding:20px 0px 30px 0px; }
+#linha { background:url(/images/bg_linha.gif) repeat-x; width:90%; margin:0 auto; }
+
+/* footer */
+#footer { background:#030f09; height:150px; border-top:1px solid #343533; clear:both; }
+#footer #footerBox { width:964px; text-align:right;  color:#fff; padding-top:20px; padding-right:10px; font-size:9px; font-family:Arial, Helvetica, sans-serif; margin:0 auto; }
+#footer #footerBox a { text-decoration:none; }
+#footer #footerBox a:hover { text-decoration:underline; }
+#footer #footerBox #footerText { text-transform:uppercase; }
+#footer #footerBox #footerText a { color:#FFFFFF; }
+#footer #footerBox #footerText a:hover { color:#fbfe3d; text-decoration:underline; }
+
+.footerFlags   { border-right:2px dotted #7b746b; width:50px; padding:0px 15px 0px 0px; margin-top:15px; }
+.footerWeb {
+  border-right:2px dotted #7B746B;
+  color:#7B746B;
+  margin-top:15px;
+  padding:0 12px 2px;
+}
+.footerAddress { color:#7b746b; width:220px; padding:0px; margin-top:15px;  }
+.footerMiniText { padding-top:20px; }
+
+/* triade */
+#triade { color:#333; float:right; margin-right:35px; }
+#triade .triadeLinks { background-color:#222; border:1px solid #333; border-top:0; float:left; font-size:13px; padding: 3px 10px 5px; }
+#triade .triadeLinks a { color:#FFF; text-decoration:none; }
+#triade .triadeLinks a:hover { color:#ce4949; text-decoration:underline; }
+#triade .triadeLinks .selected { color:#999; }
+#triade .triadeFlags { float:left; margin: 5px 0 0 8px; }
+#triade .triadeFlags a { margin: 0 2px; }
+
+/* Success, notice and error boxes
+-------------------------------------------------------------- */
+.errorExplanation      { padding: .8em; margin-bottom: 1em; border: 3px solid #ddd; }
+.errorExplanation      { background: #030f09; color: #FFF; border-color: #172018; }
+.errorExplanation a    { color: #8a1f11; }
+.errorExplanation h2   { font-size:12px; }
+.errorExplanation ul   { margin:20px 20px 20px 20px; }
+.errorExplanation li { margin:20px 20px 20px 20px; list-style-type:none}

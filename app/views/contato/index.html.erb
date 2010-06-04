@@ -1,0 +1,143 @@
+<div id="main">
+	<div id="mailContact" class="box">
+		<h2>CONTATE-NOS</h2>
+
+		<p>Alguma d&uacute;vida? Precisa de ajuda? Por favor entre em contato conosco a qualquer momento atrav&eacute;s do formul&aacute;rio abaixo.</p>
+		<br/>
+		<div id="form">
+			<% form_for @contato, :url => contato_path, :html => { :class =>  "forms", :id => "mailer"} do |f| %>
+			  <%= f.error_messages %>
+			
+			  <fieldset>
+				<%= flash_notices %>
+				<ul>
+					<li class="clearfix">
+						<label class="desc" for="name">Nome: <span class="required">&#42;</span></label>
+						<div>
+							 <%= f.text_field :nome, :class => 'fieldText' %>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="company">Empresa:</label>
+						<div>
+							 <%= f.text_field :empresa, :class => 'fieldText' %>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="email">Email: <span class="required">&#42;</span></label>
+						<div>
+							 <%= f.text_field :email, :class => 'fieldText' %>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="phone">Telefone: </label>
+						<div>
+							 <%= f.text_field :telefone, :class => 'fieldText' %>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="message">Mensagem: <span class="required">&#42;</span></label>
+						<div>
+							 <%= f.text_area :mensagem, :class => 'fieldTextarea', :rows => 6, :cols => 35 %>
+						</div>
+					</li>
+				</ul>
+				<div class="buttons">
+					<fieldset class="buttons">
+						<button class="button positive" type="submit">&nbsp;Enviar&nbsp;</button>
+					</fieldset>
+				</div>
+			  </fieldset>
+			<% end %>
+			
+			<!--
+			<form action="<%= contato_path %>" method="post" class="forms" id="mailer">
+			  <%= token_tag %>
+			<fieldset>
+				<%= flash_notices %>
+				<ul>
+					<li class="clearfix">
+						<label class="desc" for="name">Nome: <span class="required">&#42;</span></label>
+						<div>
+							<input type="text" value="" class="fieldText" id="name" name="contato[name]" />
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="company">Empresa:</label>
+						<div>
+							<input type="text" value="" class="fieldText" id="company" name="contato[company]" />
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="email">Email: <span class="required">&#42;</span></label>
+						<div>
+							<input type="text" value="" class="fieldText" id="email" name="contato[email]" />
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="phone">Telefone: </label>
+						<div>
+							<input type="text" value="" class="fieldText" id="phone" name="contato[phone]" />
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<label class="desc" for="message">Mensagem: <span class="required">&#42;</span></label>
+						<div>
+							<textarea class="fieldTextarea" id="message" rows="5" cols="35" name="contato[message]"></textarea>
+						</div>
+					</li>
+				</ul>
+				<div class="buttons">
+					<fieldset class="buttons">
+						<button class="button positive" type="submit">&nbsp;Enviar&nbsp;</button>
+					</fieldset>
+				</div>
+			</fieldset>
+			</form>
+			-->
+		</div>
+	</div>
+	
+	<div id="contact" class="box">
+	  <h2>NOSSO CONTATO</h2>
+
+	  <div class="vcard">
+		<a class="url fn n" href="http://insidecode.com.br"></a>
+		<div class="org">INSIDE CODE Tecnologia</div>
+		<div class="adr">
+
+		<div class="street-address">Rua Marechal Deodoro, 235 - 1&deg Andar - Sala 12</div>
+		  <span class="locality">S&atilde;o Jo&atilde;o da Boa Vista</span>, <span class="region">SP</span>, <span class="postal-code">13870-223</span>, <span class="country-name">Brasil</span>
+		</div>
+
+		<div>
+		  <span class="tel">
+			<span class="value">+55 19-3633-8184</span>
+			<span class="type">Comercial</span>
+		  </span>
+		</div>
+		<div>
+		  <span class="tel">
+
+			<span class="value">+55 19-9258-6382</span>
+			<span class="type">Celular</span>
+		  </span>
+		</div>
+		<div>
+		  <span class="email">
+			<span class="value"><a href="mailto:contato@insidecode.com.br" title="email">contato@insidecode.com.br</a></span>
+
+		  </span>
+		</div>
+	  </div>
+	</div>
+</div>
+<div class="clear">&nbsp;</div>
