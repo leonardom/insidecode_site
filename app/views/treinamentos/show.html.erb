@@ -11,6 +11,34 @@
 				<p><strong>Dura&ccedil;&atilde;o:</strong> <%= @treinamento.duracao %></p>
 				<p><strong>Pr&eacute;-requisitos:</strong> <%= @treinamento.pre_requisitos %></p>
 				<p><strong>C&oacute;digo:</strong> <%= @treinamento.codigo %></p>
+
+				<br>
+				<h3>Pr&oacute;ximas turmas</h3>
+				
+				<% if @treinamento.turmas.empty? %>
+					<h>Em breve</p>
+				<% else %>
+					<table>
+					  <tr>
+						<th>Data</th>
+						<th>Per&iacute;odo</th>
+						<th>Hor&aacute;rio</th>
+					  </tr>
+					  <% for turma in @treinamento.turmas %>
+					  <tr class="<%= cycle("", "alt")%>">
+						<td><%= turma.data %></td>
+						<td><%= turma.periodo %></td>
+						<td><%= turma.horario %></td>
+					  </tr>
+					  <% end %>
+					</table>
+				<% end %>
+				
+				<br/>
+				
+				<div class="moreInfo"><a href="<%= treinamentos_path %>" class="btnLink">
+					<span>Mais treinamentos</span></a>
+				</div>
 			</div>			
 		</div>
 	</div>
@@ -21,14 +49,12 @@
 
 			<div class="treinamentosRightContent" id="treinamento<%= @treinamento.id %>" style="display:block;">
 				<br>
-				<h3>Pr&oacute;ximas turmas</h3>
-				<table border=1>
-				  <tr>
-					<td>Data</td>
-					<td>Per&iacute;odo</td>
-					<td>Hor&aacute;rio</td>
-				  </tr>
-				</table>
+				<h3>Conte&uacute;do detalhado</h3>
+				<% if @treinamento.conteudo.nil? %>
+					<p>Em breve</p>
+				<% else %>
+					<%= parse_conteudo @treinamento.conteudo %>
+				<% end %>
 			</div>			
 		</div>
 	</div>

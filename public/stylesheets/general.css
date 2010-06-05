@@ -44,20 +44,9 @@
 #menu a:hover { color:#FFF; }
 #menu .selected a, #menu .selected a:hover { color:#000; padding-top:10px; cursor:default; }
 
-.home { background-image: url(../images/tab.png); width: 107px; }
-.home_selected { background-image: url(../images/tab_selected.png); width: 107px; }
-
-.servicos { background-image: url(../images/tab.png); width: 107px; }
-.servicos_selected { background-image: url(../images/tab_selected.png); width: 107px; }
-
-.treinamentos { background-image: url(../images/tab.png); width: 107px; }
-.treinamentos_selected { background-image: url(../images/tab_selected.png); width: 107px; }
-
-.time { background-image: url(../images/tab.png); width: 107px; }
-.time_selected { background-image: url(../images/tab_selected.png); width: 107px; }
-
-.contato { background-image: url(../images/tab.png); width: 107px; }
-.contato_selected { background-image: url(../images/tab_selected.png); width: 107px; }
+.tab { background-image: url(../images/tab.png); width: 107px; }
+.tab a:hover { background-image: url(../images/tab_over.png); width: 107px; }
+.tab_selected { background-image: url(../images/tab_selected.png); width: 107px; }
 
 /* BOX
 ----------------------------------------
@@ -111,6 +100,7 @@ div.serviceContent{padding-bottom:10px}
 div#treinamentosJava{margin:20px 20px 0 20px; width:450px; float:left; min-height:275px}
 div#treinamentosJava h1{margin:16px 0 10px 17px}
 div#treinamentosJava h2{position:absolute; left:0px; top:-500px; width:1px; height:1px; overflow:hidden}
+div#treinamentosJava h3{margin:0 0 10px 0}
 
 div#treinamentosJava ul{width:210px; font-size:93%; line-height:220%; float:left; margin:0 0 0 18px; padding:0}
 div#treinamentosJava ul li{list-style-type:none; float:left; display:inline; text-align:right}
@@ -129,6 +119,7 @@ div.moreInfo{margin:0 0 12px 0; padding:0; line-height:125%}
 div#treinamentosRails{margin:20px 20px 0 5px; width:440px; float:right; min-height:275px}
 div#treinamentosRails h1{margin:16px 0 10px 17px}
 div#treinamentosRails h2{position:absolute; left:0px; top:-500px; width:1px; height:1px; overflow:hidden}
+div#treinamentosRails h3{margin:0 0 10px 0}
 
 div#treinamentosRails ul{width:210px; font-size:93%; line-height:220%; float:right; margin:0 0 0 18px; padding:0}
 div#treinamentosRails ul li{list-style-type:none; float:left; display:inline; text-align:right}
@@ -157,9 +148,10 @@ div.diferenciasContent{padding-bottom:10px}
 
 /* TREINAMENTOS LEFT
 ----------------------------------------*/
-div#treinamentosLeft{margin:20px 20px 0 20px; width:450px; float:left; min-height:275px}
+div#treinamentosLeft{margin:20px 20px 0 20px; width:450px; float:left; min-height:500px}
 div#treinamentosLeft h1{margin:16px 0 10px 17px}
 div#treinamentosLeft h2{position:absolute; left:0px; top:-500px; width:1px; height:1px; overflow:hidden}
+div#treinamentosLeft h3{margin:10px 0 0px 0px; color:#6bc896;}
 
 div#treinamentosLeft ul{width:210px; font-size:93%; line-height:220%; float:left; margin:0 0 0 18px; padding:0}
 div#treinamentosLeft ul li{list-style-type:none; float:left; display:inline; text-align:right}
@@ -172,21 +164,24 @@ div#treinamentosLeftWrap img{float:left; margin:2px 10px 4px 0}
 div#treinamentosLeftWrap p{margin:0 0 12px 0; padding:0; line-height:125%}
 div.treinamentosLeftContent{padding-bottom:10px}
 
+div#treinamentosLeft table {margin:10px 0 0px 0px; border-collapse:collapse; border: 1px solid #172018; background-color:#fff; color: #000;}
+div#treinamentosLeft td, th {border: 1px solid #172018; padding: 3px 7px 2px 7px;}
+div#treinamentosLeft th {padding-top:5px; padding-bottom:4px; background-color: #006f00; color: #fff;}
+div#treinamentosLeft tr.alt td {color: #000; background-color: #EAF2D3;}
+
 /* TREINAMENTO RIGHT
 ----------------------------------------*/
-div#treinamentosRight{margin:20px 20px 0 5px; width:440px; float:right; min-height:275px}
+div#treinamentosRight{margin:20px 20px 0 5px; width:440px; float:right; height:500px; overflow:auto;}
 div#treinamentosRight h1{margin:16px 0 10px 17px}
 div#treinamentosRight h2{position:absolute; left:0px; top:-500px; width:1px; height:1px; overflow:hidden}
+div#treinamentosRight h3{margin:10px 0 0 10px; color:#6bc896;}
 
-div#treinamentosRight ul{width:210px; font-size:93%; line-height:220%; float:right; margin:0 0 0 18px; padding:0}
-div#treinamentosRight ul li{list-style-type:none; float:left; display:inline; text-align:right}
-div#treinamentosRight ul li a{outline:none; display:block; color:#d3e9dd; text-decoration:none; height:28px; width:180px; padding:0 24px 0 0; margin:-1px 0 0 0; background:#172018}
-div#treinamentosRight ul li a:hover{background-position:0 -28px}
-div#treinamentosRight ul li.current a, div#services ul li.current a:hover{background-position:0 -56px; color:#090c08; background-color:#519570; cursor:default; font-weight:bold}
+div#treinamentosRight ul li{margin:10px 0 0 25px; padding: 0;}
 
 div#treinamentosRightWrap{margin:-3px 0 0 14px; float:right; width:420px}
 div#treinamentosRightWrap img{float:left; margin:2px 10px 4px 0}
-div#treinamentosRightWrap p{margin:0 14px 12px 0; padding:0; line-height:125%}
+/*div#treinamentosRightWrap p{margin:0 14px 12px 0; padding:0; line-height:125%}*/
+div#treinamentosRightWrap p{margin:10px 0 0 10px; padding:0; line-height:125%}
 div.treinamentosRightContent{padding-bottom:10px}
 
 /*

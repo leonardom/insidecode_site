@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  treinamento_id: 1
+  data: MyString
+  periodo: MyString
+  horario: MyString
+
+two:
+  treinamento_id: 1
+  data: MyString
+  periodo: MyString
+  horario: MyString
