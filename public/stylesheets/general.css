@@ -40,7 +40,7 @@
 /* menu */
 #menu { margin:0px; padding:0px; height:31px;}
 #menu .left div { background-repeat:no-repeat; float:left; height: 31px; padding-right:5px; }
-#menu a { text-align:center; text-decoration:none; color:#FFF; padding-top:9px; display:block; font:11px Arial; font-weight:bold; text-transform:uppercase; height:21px; }
+#menu a { text-align:center; text-decoration:none; color:#FFF; padding-top:9px; display:block; font:11px Arial; font-weight:bold; text-transform:uppercase; height:21px; outline: none;}
 #menu a:hover { color:#FFF; }
 #menu .selected a, #menu .selected a:hover { color:#000; padding-top:10px; cursor:default; }
 

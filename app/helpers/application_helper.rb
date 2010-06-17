@@ -5,7 +5,7 @@ module ApplicationHelper
 
     css_class = "tab#{selected}"
     
-    "<div class=\"#{css_class}\"<a href=\"#{params[:link]}\">#{params[:title]}</a></div>"
+    "<div class=\"#{css_class}\"><a href=\"#{params[:link]}\">#{params[:title]}</a></div>"
   end
   
   def flash_notices
